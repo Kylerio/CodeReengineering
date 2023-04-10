@@ -62,9 +62,17 @@ public class Main {
         }
      }
 
-//  code smell after
+//  code smell
     public static void printPilihanOperasi (Operation operasi){
-        System.out.print(operasi.pilihanOperasi());
+        if(operasi instanceof Pembagian){
+            System.out.print("Anda memilih Pembagian dan hasilnya adalah ");
+        } else if (operasi instanceof Perkalian) {
+            System.out.print("Anda memilih Perkalian dan hasilnya adalah ");
+        } else if (operasi instanceof Pertambahan) {
+            System.out.print("Anda memilih Pertambahan dan hasilnya adalah ");
+        } else if (operasi instanceof Pengurangan) {
+            System.out.print("Anda memilih Pengurangan dan hasilnya adalah ");
+        }
 
     }
 }
