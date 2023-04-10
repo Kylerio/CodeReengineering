@@ -5,23 +5,27 @@ import java.util.Scanner;
 public class ShoppingCart {
 	
 	private List<Item> items;
-	private TotalCalculator totalCalc;
+
+    // temporary field
+    private double totalPrice;
 
     // constructor
     public ShoppingCart() {
         this.items = new ArrayList<>();
-        this.totalCalc = new TotalCalculator(items);
+        this.totalPrice = 0.0;
     }
 
     // add item to cart
     public void addItem(Item item) {
         items.add(item);
-        totalCalc.updateTotalPrice(item.getPrice());
+
+        // update total price
+        totalPrice += item.getPrice();
     }
 
     // getter for totalPrice
     public double getTotalPrice() {
-        return totalCalc.getTotalPrice();
+        return totalPrice;
     }
 
     public static void main(String[] args) {
