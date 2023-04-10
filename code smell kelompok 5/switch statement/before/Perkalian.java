@@ -11,8 +11,5 @@ public class Perkalian implements Operation{
     public void perform() {
         System.out.println(a*b);
     }
-    
-    public String pilihanOperasi() {
-    	return "Anda memilih Perkalian dan hasilnya adalah ";
-    }
+
 }
