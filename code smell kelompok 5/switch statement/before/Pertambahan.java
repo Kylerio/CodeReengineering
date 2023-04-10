@@ -11,8 +11,5 @@ public class Pertambahan implements Operation{
     public void perform() {
         System.out.println(a+b);
     }
-    
-    public String pilihanOperasi() {
-    	return "Anda memilih Pertambahan dan hasilnya adalah ";
-    }
+
 }
