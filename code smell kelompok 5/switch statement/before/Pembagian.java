@@ -11,8 +11,5 @@ public class Pembagian implements Operation{
     public void perform() {
         System.out.println(a/b);
     }
-    
-    public String pilihanOperasi() {
-    	return "Anda memilih Pembagian dan hasilnya adalah ";
-    }
+
 }
