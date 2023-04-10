@@ -1,4 +1,3 @@
-
 public class Pengurangan implements Operation{
     Integer a;
     Integer b;
@@ -12,8 +11,5 @@ public class Pengurangan implements Operation{
     public void perform() {
         System.out.println(a-b);
     }
-    
-    public String pilihanOperasi() {
-    	return "Anda memilih Pengurangan dan hasilnya adalah ";
-    }
+
 }
