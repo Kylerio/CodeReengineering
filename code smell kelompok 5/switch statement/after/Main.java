@@ -62,7 +62,7 @@ public class Main {
         }
      }
 
-//  code smell after
+
     public static void printPilihanOperasi (Operation operasi){
         System.out.print(operasi.pilihanOperasi());
 
