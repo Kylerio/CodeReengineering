@@ -1,0 +1,65 @@
+package com.myapp;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Role {
+    private String roleName;
+    private List<UserRole> roleUsers;
+
+    public Role(String roleName) {
+        this.roleName = roleName;
+        roleUsers = new ArrayList<>();
+    }
+
+    public void addRoleUser(UserRole userRole) {
+        roleUsers.add(userRole);
+    }
+
+    public List<UserRole> getRoleUsers() {
+        return roleUsers;
+    }
+
+    public String getRoleName() {
+        return roleName;
+    }
+}
+
+public class User {
+    private String name;
+    private List<UserRole> userRoles;
+
+    public User(String name) {
+        this.name = name;
+        userRoles = new ArrayList<>();
+    }
+
+    public void addUserRole(UserRole userRole) {
+        userRoles.add(userRole);
+    }
+
+    public List<UserRole> getUserRoles() {
+        return userRoles;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+public class UserRole {
+    private User user;
+    private Role role;
+
+    public UserRole(User user, Role role) {
+        this.user = user;
+        this.role = role;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+}
